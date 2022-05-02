@@ -1,4 +1,6 @@
 class Solution {
+
+// DDribe
 public:
     bool backspaceCompare(string s, string t) {
         int i=0;
