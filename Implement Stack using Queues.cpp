@@ -31,7 +31,7 @@ public:
         return 0;
     }
     
-    bool empty() {
+    bool empty() {132 Pattern
        return stack.empty();
     }
 };
