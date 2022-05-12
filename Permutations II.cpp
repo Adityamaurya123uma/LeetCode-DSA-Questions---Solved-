@@ -1,11 +1,12 @@
 class Solution {
 public:
+// vector declaration
     vector<vector<int>> res;
     vector<vector<int>> permuteUnique(vector<int>& nums) {
         perm(nums, 0);
         return res;
     }
-
+    
     void perm(vector<int>& nums, int start) {
         if(start==nums.size()) {
             if (count(res.begin(), res.end(), nums)==0) {
