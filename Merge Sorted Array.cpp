@@ -7,7 +7,6 @@ public:
             nums1[i] = nums2[j];
         }
         
-        
         sort(nums1.begin(),nums1.end());
         
         
