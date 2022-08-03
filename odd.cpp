@@ -3,14 +3,23 @@ using namespace std;
 
 int main()
 {
-    for (int i = 0; i < 4; i++)
+    int n;
+    cin >> n;
+
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 3 - i; j >= 0; j--)
+
+        for (int j = 1; j < i + 1; j++)
         {
-            cout << "*"
-                 << " ";
+            cout << " ";
+        }
+
+        for (int k = 0; k < n - i; k++)
+        {
+            cout << i + 1 << " ";
         }
         cout << endl;
     }
+
     return 0;
 }
