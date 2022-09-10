@@ -1,10 +1,8 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
-    for (int i = 1; i < 11; i++)
-    {
-        cout << 2 << "*" << i << "=" << i * 2 << endl;
-    }
-    return 0;
+    string s1;
+    string s2;
+    cin >> s1, s2;
 }
