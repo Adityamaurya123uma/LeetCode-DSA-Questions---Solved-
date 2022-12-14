@@ -2,14 +2,19 @@
 using namespace std;
 int main()
 {
-    string s1;
-    string s2;
-    cin >> s1, s2;
 
-    int s1l=s1.length();
-    int date;
-
-    for(int i=0;i<s1l;i++){
-        if(s1[i] & s1[i+1] & s1[i+2] & s1[i+3] )
+    int n = 5;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            if (i >= j)
+            {
+                cout << j;
+            }
+        }
+        cout << endl;
     }
+
+    return 0;
 }
