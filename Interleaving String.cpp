@@ -1,7 +1,6 @@
 class Solution
 {
 public:
-    // int dp[102][102];
     bool helper(string &s1, string &s2, string &s3, int l1, int l2, int l3, vector<vector<int>> &dp)
     {
         if (l1 < 0 && l2 < 0 && l3 < 0)
@@ -31,7 +30,6 @@ public:
         if (s3.size() != s1.size() + s2.size())
             return false;
         vector<vector<int>> dp(s1.size() + 1, (vector<int>(s2.size() + 1, -1)));
-        // memset(dp, -1, sizeof(dp));
         return helper(s1, s2, s3, s1.size() - 1, s2.size() - 1, s3.size() - 1, dp);
     }
 };
