@@ -1,8 +1,5 @@
 class MyStack {
 public:
-    MyStack() {
-        
-    }
     queue<int> stack;
     
     void push(int x) {
