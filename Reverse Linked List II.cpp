@@ -1,21 +1,20 @@
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    int n;
-    cin >> n;
-
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 1; j <= i; j++)
-        {
-            cout << " ";
+class Solution {
+public:
+    ListNode* reverseBetween(ListNode* head, int left, int right) {
+        ListNode *dummy = new ListNode(0);
+        dummy->next = head;
+        ListNode *prev = dummy;
+        
+        for(int i = 0; i < left - 1; i++)
+            prev = prev->next;
+        
+        ListNode *curr = prev->next;
+        for(int i = 0; i < right - left; i++){
+            ListNode *forw = curr->next;
+            curr->next = forw->next;
+            forw->next = prev->next;
+            prev->next = forw;
         }
-        for (int k = 1; k < n - 1; k++)
-        {
-            cout << "*";
-        }
-        cout << endl;
+        return dummy->next;
     }
-}
+};
