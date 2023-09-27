@@ -1,3 +1,5 @@
+Minimum Depth of Binary Tree
+
 class Solution {
 public:
     int minDepth(TreeNode* root) {
